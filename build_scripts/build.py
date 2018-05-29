@@ -63,12 +63,12 @@ def main():
         sys.exit(0)
 
     ipa_path = ios_builder.build_ipa()
-    app_download_page_url = uploadIpaToPgyer(ipa_path, args.update_description)
-    try:
-        output_folder = os.path.dirname(ipa_path)
-        saveQRCodeImage(app_download_page_url, output_folder)
-    except Exception as e:
-        print("Exception occured: {}".format(str(e)))
+    # app_download_page_url = uploadIpaToPgyer(ipa_path, args.update_description)
+    # try:
+    #     output_folder = os.path.dirname(ipa_path)
+    #     saveQRCodeImage(app_download_page_url, output_folder)
+    # except Exception as e:
+    #     print("Exception occured: {}".format(str(e)))
 
 
 if __name__ == '__main__':
